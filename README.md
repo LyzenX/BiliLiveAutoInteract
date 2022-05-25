@@ -21,9 +21,6 @@
 
 ```json
 {
-    "cookie": "buvid3=3A6*****-C***-4**4-B**6-3E***********932infoc; (后面省略几百个字符)",
-    "csrf": "b2**************************bd3b",
-    "csrf_token": "b2**************************bd3b",
     "accessKey":"f9**************************0b51",
     "sendLike": true,
     "saveLog": true,
@@ -38,8 +35,8 @@
     ]
 }
 ```
-- 其中，cookie、csrf、csrf_token、accessKey用于身份验证，请不要泄露这些信息，否则别人可能会用它们登陆你的账号。
-- cookie、csrf、csrf_token、accessKey的获取方法待更新
+- 其中，accessKey用于身份验证，请不要泄露，否则别人可能会用它登陆你的账号。
+- release中附带了[XiaoMiku01大佬开发的accessKey获取工具](https://github.com/XiaoMiku01/fansMedalHelper/releases/tag/logintool)
 - sendLike代表是否发送点赞，如果你无法获取accessKey，可以把它改为false。
 - saveLog代表是否保存日志，如果软件出现故障，你可以提交日志来帮助故障修复。你也可以关闭它来避免占用储存空间。
 - danmu指发送的弹幕内容。

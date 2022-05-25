@@ -72,7 +72,7 @@ public class Main {
 
                         Logger.log("\n");
                         Logger.log("-----------------");
-                        Logger.log("正在发送分享，该操作可能需要很长时间(每11分钟一次)");
+                        Logger.log("正在发送分享");
                         for (String roomId : Configurations.shareRooms) {
                             for (int i = 0; i < 5; i++) {
                                 BiliLiveSender.sendShare(roomId);

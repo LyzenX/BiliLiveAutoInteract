@@ -1,0 +1,11 @@
+# idea
+out
+target
+*.ipr
+*.iws
+*.iml
+.idea
+
+src/test
+
+config.json

@@ -17,9 +17,6 @@ import java.util.stream.Stream;
  */
 public class Configurations {
 
-    public static String cookie = "cookie";
-    public static String csrf_token = "csrf";
-    public static String csrf = "csrf";
     public static String accessKey = "accessKey";
     public static String danmu = "(=・ω・=)";
     public static boolean sendLike = true;
@@ -37,10 +34,7 @@ public class Configurations {
                 f.createNewFile();
                 writeIntoFile(fileName,
                         new JSONObject(
-                                "{\"cookie\":\"cookie\"," +
-                                        "\"csrf_token\":\"csrf_token\"," +
-                                        "\"csrf\":\"csrf\"," +
-                                        "\"accessKey\":\"accessKey\"," +
+                                "{\"accessKey\":\"accessKey\"," +
                                         "\"sendLike\":true," +
                                         "\"saveLog\":true," +
                                         "\"danmu\":\"(=^_^=)\"," +
@@ -65,9 +59,6 @@ public class Configurations {
 
         JSONObject json = new JSONObject(sb.toString());
 
-        cookie= json.getString("cookie");
-        csrf_token = json.getString("csrf_token");
-        csrf = json.getString("csrf");
         danmu = json.getString("danmu");
         accessKey = json.getString("accessKey");
         sendLike = json.getBoolean("sendLike");

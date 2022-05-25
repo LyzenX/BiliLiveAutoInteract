@@ -97,7 +97,7 @@ public class Configurations {
         if(sendLike) {
             t += 12L * danmuAndLikeRooms.size() * 3L;
         }
-        t += 60L * 11L * shareRooms.size() * 5L;
+        t += 6L * shareRooms.size() * 5L;
 
         if(t > 3600){
             int hour = (int)(t / 3600);

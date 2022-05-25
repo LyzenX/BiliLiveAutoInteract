@@ -78,7 +78,7 @@ public class Main {
                                 BiliLiveSender.sendShare(roomId);
                                 Logger.log("为" + roomId + "分享直播间");
                                 try {
-                                    Thread.sleep(1000L * 60L * 11L);
+                                    Thread.sleep(1000L * 5L);
                                 } catch (InterruptedException e) {
                                     Logger.err(e);
                                 }

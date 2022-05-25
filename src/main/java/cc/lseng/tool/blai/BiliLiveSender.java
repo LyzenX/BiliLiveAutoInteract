@@ -23,7 +23,7 @@ public class BiliLiveSender {
         params.put("color", "16777215");
         params.put("fontsize", "25");
 
-        return HttpUtils.sendPost("https://api.live.bilibili.com/msg/send", headers, params);
+        return HttpUtils.sendPost("https://api.live.bilibili.com//xlive/app-room/v1/dM/sendmsg", headers, params);
     }
 
     public static String sendLike(String roomId){

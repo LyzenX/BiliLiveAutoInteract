@@ -84,10 +84,6 @@ public class Configurations {
             }
         }
 
-        if(shareRooms.size() > 26){
-            Logger.log("警告：需要分享的直播间超过26个，超出部分可能无法成功分享");
-        }
-
         return true;
     }
 
